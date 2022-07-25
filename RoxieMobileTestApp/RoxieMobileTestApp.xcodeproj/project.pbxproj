@@ -14,6 +14,7 @@
 		B1A9E010288EBC4E00907636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E00F288EBC4E00907636 /* Assets.xcassets */; };
 		B1A9E01C288EC07800907636 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E01B288EC07800907636 /* StartViewController.swift */; };
 		B1A9E020288EC48900907636 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E01F288EC48900907636 /* NetworkService.swift */; };
+		B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E021288EEBA700907636 /* OrderInfo.swift */; };
 		EB2344B2C27C129E882C9362 /* Pods_RoxieMobileTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD76F62F0875D3A65476F57 /* Pods_RoxieMobileTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		B1A9E014288EBC4E00907636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1A9E01B288EC07800907636 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B1A9E01F288EC48900907636 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B1A9E021288EEBA700907636 /* OrderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				3C047DBE71F797BF7645A528 /* Pods-RoxieMobileTestApp.debug.xcconfig */,
 				746C6C3E60865E0D866A0CB4 /* Pods-RoxieMobileTestApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +108,7 @@
 		B1A9E01D288EC0DC00907636 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B1A9E021288EEBA700907636 /* OrderInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +237,7 @@
 			files = (
 				B1A9E020288EC48900907636 /* NetworkService.swift in Sources */,
 				B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */,
+				B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */,
 				B1A9E01C288EC07800907636 /* StartViewController.swift in Sources */,
 				B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */,
 				B1A9E00E288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld in Sources */,
