@@ -9,24 +9,24 @@ import Foundation
 import UIKit
 
 class OrderService {
-    static var ordersInfo = [OrderInfo]()
-    static var ordersImage = [UIImage]()
+    var ordersInfo = [OrderInfo]()
+    var ordersImage = [UIImage]()
     
-    static func loadOrders() {
+    func loadOrders() {
         let ordersURL = "https://www.roxiemobile.ru/careers/test/orders.json"
         
-        NetworkService.getOrders(url: ordersURL) { orders in
-            ordersInfo = orders
+        NetworkService.getOrders(url: ordersURL) { [weak self] orders in
+            self?.ordersInfo = orders
         }
     }
     
-    static func loadOrdersImage() {
+    func loadOrdersImage() {
         let imageOrdersURL = "https://www.roxiemobile.ru/careers/test/images/"
         
         for i in 0...ordersInfo.count {
-            NetworkService.getImages(url: imageOrdersURL, imageName: ordersInfo[i].photo) { image in
+            NetworkService.getImages(url: imageOrdersURL, imageName: ordersInfo[i].photo) { [weak self] image in
                 guard let image = image else { return }
-                ordersImage[i] = image
+                self?.ordersImage[i] = image
             }
         }
     }
