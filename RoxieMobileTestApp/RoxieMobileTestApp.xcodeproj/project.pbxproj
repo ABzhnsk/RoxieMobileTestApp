@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E003288EBC4C00907636 /* AppDelegate.swift */; };
 		B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E005288EBC4C00907636 /* SceneDelegate.swift */; };
-		B1A9E008288EBC4C00907636 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E007288EBC4C00907636 /* ViewController.swift */; };
 		B1A9E00B288EBC4C00907636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E009288EBC4C00907636 /* Main.storyboard */; };
 		B1A9E00E288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E00C288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld */; };
 		B1A9E010288EBC4E00907636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E00F288EBC4E00907636 /* Assets.xcassets */; };
-		B1A9E013288EBC4E00907636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E011288EBC4E00907636 /* LaunchScreen.storyboard */; };
+		B1A9E01C288EC07800907636 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E01B288EC07800907636 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B1A9E000288EBC4C00907636 /* RoxieMobileTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoxieMobileTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A9E003288EBC4C00907636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A9E005288EBC4C00907636 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B1A9E007288EBC4C00907636 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1A9E00A288EBC4C00907636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1A9E00D288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoxieMobileTestApp.xcdatamodel; sourceTree = "<group>"; };
 		B1A9E00F288EBC4E00907636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B1A9E012288EBC4E00907636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1A9E014288EBC4E00907636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A9E01B288EC07800907636 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +58,37 @@
 			children = (
 				B1A9E003288EBC4C00907636 /* AppDelegate.swift */,
 				B1A9E005288EBC4C00907636 /* SceneDelegate.swift */,
-				B1A9E007288EBC4C00907636 /* ViewController.swift */,
+				B1A9E01D288EC0DC00907636 /* Model */,
+				B1A9E01E288EC0EB00907636 /* Services */,
+				B1A9E01A288EC02100907636 /* Controllers */,
 				B1A9E009288EBC4C00907636 /* Main.storyboard */,
 				B1A9E00F288EBC4E00907636 /* Assets.xcassets */,
-				B1A9E011288EBC4E00907636 /* LaunchScreen.storyboard */,
 				B1A9E014288EBC4E00907636 /* Info.plist */,
 				B1A9E00C288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld */,
 			);
 			path = RoxieMobileTestApp;
+			sourceTree = "<group>";
+		};
+		B1A9E01A288EC02100907636 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1A9E01B288EC07800907636 /* StartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B1A9E01D288EC0DC00907636 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1A9E01E288EC0EB00907636 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1A9E013288EBC4E00907636 /* LaunchScreen.storyboard in Resources */,
 				B1A9E010288EBC4E00907636 /* Assets.xcassets in Resources */,
 				B1A9E00B288EBC4C00907636 /* Main.storyboard in Resources */,
 			);
@@ -141,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1A9E008288EBC4C00907636 /* ViewController.swift in Sources */,
 				B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */,
+				B1A9E01C288EC07800907636 /* StartViewController.swift in Sources */,
 				B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */,
 				B1A9E00E288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld in Sources */,
 			);
@@ -157,14 +177,6 @@
 				B1A9E00A288EBC4C00907636 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B1A9E011288EBC4E00907636 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1A9E012288EBC4E00907636 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
