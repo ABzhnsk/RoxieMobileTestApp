@@ -7,5 +7,6 @@ target 'RoxieMobileTestApp' do
 
   # Pods for RoxieMobileTestApp
   pod 'Alamofire'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end
