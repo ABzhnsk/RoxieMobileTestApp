@@ -13,10 +13,21 @@ class OrderService {
     static var ordersImage = [UIImage]()
     
     static func loadOrders() {
+        let ordersURL = "https://www.roxiemobile.ru/careers/test/orders.json"
         
+        NetworkService.getOrders(url: ordersURL) { orders in
+            ordersInfo = orders
+        }
     }
     
     static func loadOrdersImage() {
+        let imageOrdersURL = "https://www.roxiemobile.ru/careers/test/images/"
         
+        for i in 0...ordersInfo.count {
+            NetworkService.getImages(url: imageOrdersURL, imageName: ordersInfo[i].photo) { image in
+                guard let image = image else { return }
+                ordersImage[i] = image
+            }
+        }
     }
 }
