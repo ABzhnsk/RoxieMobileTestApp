@@ -17,8 +17,7 @@ class NetworkService {
             .responseData { response in
                 switch response.result{
                 case .success(let data):
-                    let json = try? JSONSerialization.jsonObject(with: data,
-                                                                 options: JSONSerialization.ReadingOptions.fragmentsAllowed)
+                    let json = JSON(data)
                     print(json)
                 case .failure(let error):
                     print(error)
