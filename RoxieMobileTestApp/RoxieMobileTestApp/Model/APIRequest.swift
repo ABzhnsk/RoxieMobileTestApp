@@ -14,3 +14,14 @@ class APIRequest<Resource: NetworkResource> {
         self.resource = resource
     }
 }
+
+extension APIRequest: NetworkRequest {
+    func decode(_ data: Data) -> [Resource.ModelType]? {
+        let wrapper = try? JSONDecoder().decode(([Resource.ModelType]).self, from: data)
+        return wrapper
+    }
+    
+    func execute(withCompletion completion: @escaping ([Resource.ModelType]?) -> Void) {
+        load(resource.url, withCompletion: completion)
+    }
+}
