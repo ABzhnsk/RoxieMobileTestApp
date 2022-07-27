@@ -20,14 +20,24 @@ class OrdersTableViewCell: UITableViewCell {
         return df
     }()
     
+    static let currencyFormatter: NumberFormatter = {
+        let currency = NumberFormatter()
+        currency.usesGroupingSeparator = true
+        currency.numberStyle = .currency
+        currency.locale = Locale(identifier: "ru_RU")
+        return currency
+    }()
+    
     func configure(withData order: OrderInfo) {
-        let dateFormatter = ISO8601DateFormatter()
-        guard let date = dateFormatter.date(from: order.orderTime) else {return}
+        let isoDateFormatter = ISO8601DateFormatter()
+        guard let date = isoDateFormatter.date(from: order.orderTime) else {return}
         let stringDate = OrdersTableViewCell.dateFormatter.string(from: date)
+        let amount: Float = Float(order.price.amount) / 100
+        let amountString = OrdersTableViewCell.currencyFormatter.string(from: amount as NSNumber)
         self.startAddress.text = "Откуда: \(order.startAddress.address)"
         self.endAddress.text = "Куда: \(order.endAddress.address)"
         self.dateOrder.text = "Дата: \(stringDate)"
-        self.amountOrder.text = "Стоимость: \(String(order.price.amount) + order.price.currency)"
+        self.amountOrder.text = "Стоимость: \(amountString ?? "")"
     }
     
     override func prepareForReuse() {
