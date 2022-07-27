@@ -11,6 +11,8 @@
 		B128869828918FCA00FD218B /* NetworkResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869728918FCA00FD218B /* NetworkResourceProtocol.swift */; };
 		B128869A2891925200FD218B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12886992891925200FD218B /* APIRequest.swift */; };
 		B128869C28919FFA00FD218B /* OrderResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869B28919FFA00FD218B /* OrderResource.swift */; };
+		B12886A02891A31B00FD218B /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869E2891A31B00FD218B /* OrdersTableViewCell.swift */; };
+		B12886A12891A31B00FD218B /* OrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B128869F2891A31B00FD218B /* OrdersTableViewCell.xib */; };
 		B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E003288EBC4C00907636 /* AppDelegate.swift */; };
 		B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E005288EBC4C00907636 /* SceneDelegate.swift */; };
 		B1A9E00B288EBC4C00907636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E009288EBC4C00907636 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		B128869728918FCA00FD218B /* NetworkResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResourceProtocol.swift; sourceTree = "<group>"; };
 		B12886992891925200FD218B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		B128869B28919FFA00FD218B /* OrderResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderResource.swift; sourceTree = "<group>"; };
+		B128869E2891A31B00FD218B /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		B128869F2891A31B00FD218B /* OrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewCell.xib; sourceTree = "<group>"; };
 		B1A9E000288EBC4C00907636 /* RoxieMobileTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoxieMobileTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A9E003288EBC4C00907636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A9E005288EBC4C00907636 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B128869D2891A2D800FD218B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B128869E2891A31B00FD218B /* OrdersTableViewCell.swift */,
+				B128869F2891A31B00FD218B /* OrdersTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B1A9DFF7288EBC4C00907636 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 				B1A9E01E288EC0EB00907636 /* Services */,
 				B1A9E01A288EC02100907636 /* Controllers */,
 				B1A9E009288EBC4C00907636 /* Main.storyboard */,
+				B128869D2891A2D800FD218B /* Cell */,
 				B1A9E00F288EBC4E00907636 /* Assets.xcassets */,
 				B1A9E014288EBC4E00907636 /* Info.plist */,
 				B1A9E00C288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld */,
@@ -192,6 +206,7 @@
 			files = (
 				B1A9E010288EBC4E00907636 /* Assets.xcassets in Resources */,
 				B1A9E00B288EBC4C00907636 /* Main.storyboard in Resources */,
+				B12886A12891A31B00FD218B /* OrdersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +267,7 @@
 				B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */,
 				B128869828918FCA00FD218B /* NetworkResourceProtocol.swift in Sources */,
 				B128869A2891925200FD218B /* APIRequest.swift in Sources */,
+				B12886A02891A31B00FD218B /* OrdersTableViewCell.swift in Sources */,
 				B1A9E00E288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
