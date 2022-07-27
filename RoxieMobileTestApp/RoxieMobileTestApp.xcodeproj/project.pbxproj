@@ -15,7 +15,6 @@
 		B1A9E01C288EC07800907636 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E01B288EC07800907636 /* StartViewController.swift */; };
 		B1A9E020288EC48900907636 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E01F288EC48900907636 /* NetworkService.swift */; };
 		B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E021288EEBA700907636 /* OrderInfo.swift */; };
-		B1A9E024288F1A7700907636 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E023288F1A7700907636 /* OrderService.swift */; };
 		EB2344B2C27C129E882C9362 /* Pods_RoxieMobileTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD76F62F0875D3A65476F57 /* Pods_RoxieMobileTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		B1A9E01B288EC07800907636 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B1A9E01F288EC48900907636 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B1A9E021288EEBA700907636 /* OrderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfo.swift; sourceTree = "<group>"; };
-		B1A9E023288F1A7700907636 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				B1A9E01F288EC48900907636 /* NetworkService.swift */,
-				B1A9E023288F1A7700907636 /* OrderService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A9E020288EC48900907636 /* NetworkService.swift in Sources */,
-				B1A9E024288F1A7700907636 /* OrderService.swift in Sources */,
 				B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */,
 				B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */,
 				B1A9E01C288EC07800907636 /* StartViewController.swift in Sources */,
