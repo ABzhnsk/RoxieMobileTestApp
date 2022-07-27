@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct OrderInfo: Decodable {
     let id: Int
     let startAddress: Address
