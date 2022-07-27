@@ -8,6 +8,8 @@
 import UIKit
 
 class StartViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    
     private var orders = [OrderInfo]()
     private var request: APIRequest<OrdersResource>?
     
