@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B103D2842892E19A00A9CC1D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103D2832892E19900A9CC1D /* UIColor+Extension.swift */; };
+		B103D2862892E74400A9CC1D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103D2852892E74400A9CC1D /* DetailsViewController.swift */; };
 		B128869628918D0100FD218B /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869528918D0100FD218B /* NetworkRequestProtocol.swift */; };
 		B128869828918FCA00FD218B /* NetworkResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869728918FCA00FD218B /* NetworkResourceProtocol.swift */; };
 		B128869A2891925200FD218B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12886992891925200FD218B /* APIRequest.swift */; };
@@ -27,6 +29,8 @@
 		3C047DBE71F797BF7645A528 /* Pods-RoxieMobileTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoxieMobileTestApp.debug.xcconfig"; path = "Target Support Files/Pods-RoxieMobileTestApp/Pods-RoxieMobileTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3FD76F62F0875D3A65476F57 /* Pods_RoxieMobileTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoxieMobileTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		746C6C3E60865E0D866A0CB4 /* Pods-RoxieMobileTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoxieMobileTestApp.release.xcconfig"; path = "Target Support Files/Pods-RoxieMobileTestApp/Pods-RoxieMobileTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		B103D2832892E19900A9CC1D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B103D2852892E74400A9CC1D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B128869528918D0100FD218B /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		B128869728918FCA00FD218B /* NetworkResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResourceProtocol.swift; sourceTree = "<group>"; };
 		B12886992891925200FD218B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 				B1A9E00F288EBC4E00907636 /* Assets.xcassets */,
 				B1A9E014288EBC4E00907636 /* Info.plist */,
 				B1A9E00C288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld */,
+				B103D2832892E19900A9CC1D /* UIColor+Extension.swift */,
 			);
 			path = RoxieMobileTestApp;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				B1A9E01B288EC07800907636 /* StartViewController.swift */,
+				B103D2852892E74400A9CC1D /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 				B128869C28919FFA00FD218B /* OrderResource.swift in Sources */,
 				B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */,
 				B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */,
+				B103D2842892E19A00A9CC1D /* UIColor+Extension.swift in Sources */,
 				B128869628918D0100FD218B /* NetworkRequestProtocol.swift in Sources */,
 				B1A9E01C288EC07800907636 /* StartViewController.swift in Sources */,
 				B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */,
@@ -269,6 +276,7 @@
 				B128869A2891925200FD218B /* APIRequest.swift in Sources */,
 				B12886A02891A31B00FD218B /* OrdersTableViewCell.swift in Sources */,
 				B1A9E00E288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld in Sources */,
+				B103D2862892E74400A9CC1D /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

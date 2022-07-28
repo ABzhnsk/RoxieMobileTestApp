@@ -47,12 +47,13 @@ extension StartViewController: UITableViewDataSource {
                                                        for: indexPath) as? OrdersTableViewCell
         else { return UITableViewCell() }
         cell.configure(withData: orders[indexPath.row])
+        (indexPath.row  % 2 == 0) ? (cell.backgroundColor = UIColor.white) : (cell.backgroundColor = UIColor.superLightGray)
         return cell
     }
 }
 
 extension StartViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
+        return 160
     }
 }

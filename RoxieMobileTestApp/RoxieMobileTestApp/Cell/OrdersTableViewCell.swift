@@ -34,8 +34,8 @@ class OrdersTableViewCell: UITableViewCell {
         let stringDate = OrdersTableViewCell.dateFormatter.string(from: date)
         let amount: Float = Float(order.price.amount) / 100
         let amountString = OrdersTableViewCell.currencyFormatter.string(from: amount as NSNumber)
-        self.startAddress.text = "Откуда: \(order.startAddress.address)"
-        self.endAddress.text = "Куда: \(order.endAddress.address)"
+        self.startAddress.text = "Откуда: \(order.startAddress.address), г. \(order.startAddress.city)"
+        self.endAddress.text = "Куда: \(order.endAddress.address), г. \(order.endAddress.city)"
         self.dateOrder.text = "Дата: \(stringDate)"
         self.amountOrder.text = "Стоимость: \(amountString ?? "")"
     }
