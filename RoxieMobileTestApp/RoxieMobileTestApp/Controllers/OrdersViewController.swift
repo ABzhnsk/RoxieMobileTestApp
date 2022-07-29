@@ -32,6 +32,7 @@ extension OrdersViewController {
         orderRequest.execute { [weak self] (orders: [OrderInfo]?) in
             guard let orders = orders else { return }
             self?.orders = orders
+            self?.orders.sort { $0.orderTime.compare($1.orderTime, options: .numeric) == .orderedDescending }
             self?.tableView.reloadData()
         }
     }
