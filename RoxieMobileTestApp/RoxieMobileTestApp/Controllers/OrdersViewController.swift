@@ -67,6 +67,7 @@ extension OrdersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         openDetails(for: orders[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
