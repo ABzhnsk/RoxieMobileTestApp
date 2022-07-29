@@ -8,13 +8,13 @@
 import Foundation
 import Alamofire
 
-protocol NetworkRequest: AnyObject {
+protocol NetworkRequestProtocol: AnyObject {
     associatedtype ModelType
     func decode(_ data: Data) -> ModelType?
     func execute(withCompletion completion: @escaping (ModelType?) -> Void)
 }
 
-extension NetworkRequest {
+extension NetworkRequestProtocol {
     func load(_ url: URL, withCompletion completion: @escaping (ModelType?) -> Void) {
         AF
             .request(url, method: .get)

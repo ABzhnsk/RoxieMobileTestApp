@@ -43,8 +43,8 @@ extension OrdersViewController {
         let imageURL = URL(string: "https://www.roxiemobile.ru/careers/test/images/\(order.vehicle.photo)")
         guard let orderImageURL = imageURL else { return }
         let imageRequest = ImageRequest(url: orderImageURL)
-        
         self.orderImageRequest = imageRequest
+        
         imageRequest.execute { (orderImage: UIImage?) in
             guard let orderImage = orderImage else { return }
             detailsController?.imageView.image = orderImage

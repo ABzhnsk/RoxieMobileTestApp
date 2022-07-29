@@ -15,7 +15,7 @@ class APIRequest<Resource: NetworkResource> {
     }
 }
 
-extension APIRequest: NetworkRequest {
+extension APIRequest: NetworkRequestProtocol {
     func decode(_ data: Data) -> [Resource.ModelType]? {
         let wrapper = try? JSONDecoder().decode(([Resource.ModelType]).self, from: data)
         return wrapper

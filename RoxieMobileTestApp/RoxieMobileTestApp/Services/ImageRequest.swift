@@ -16,7 +16,7 @@ class ImageRequest {
     }
 }
 
-extension ImageRequest: NetworkRequest {
+extension ImageRequest: NetworkRequestProtocol {
     func decode(_ data: Data) -> UIImage? {
         return UIImage(data: data)
     }
