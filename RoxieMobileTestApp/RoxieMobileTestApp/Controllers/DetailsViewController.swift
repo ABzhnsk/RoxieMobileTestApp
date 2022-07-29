@@ -36,6 +36,7 @@ class DetailsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.imageView.image = nil
         self.orderId.text = "Заказ №\(orderIdText)"
         self.startAddress.text = "Откуда: \(startAddressText)"
         self.endAddress.text = "Куда: \(endAddressText)"
@@ -45,6 +46,5 @@ class DetailsViewController: UIViewController {
         self.driverName.text = "Водитель: \(driverNameText)"
         self.regNumber.text = "Номер машины: \(regNumberText)"
         self.modelName.text = "Модель машины: \(modelNameText) "
-        
     }
 }

@@ -18,6 +18,7 @@
 		B128869C28919FFA00FD218B /* OrderResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869B28919FFA00FD218B /* OrderResource.swift */; };
 		B12886A02891A31B00FD218B /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869E2891A31B00FD218B /* OrdersTableViewCell.swift */; };
 		B12886A12891A31B00FD218B /* OrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B128869F2891A31B00FD218B /* OrdersTableViewCell.xib */; };
+		B16E10742894325A0017F37F /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E10732894325A0017F37F /* ImageRequest.swift */; };
 		B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E003288EBC4C00907636 /* AppDelegate.swift */; };
 		B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E005288EBC4C00907636 /* SceneDelegate.swift */; };
 		B1A9E00B288EBC4C00907636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E009288EBC4C00907636 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		B128869B28919FFA00FD218B /* OrderResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderResource.swift; sourceTree = "<group>"; };
 		B128869E2891A31B00FD218B /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
 		B128869F2891A31B00FD218B /* OrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewCell.xib; sourceTree = "<group>"; };
+		B16E10732894325A0017F37F /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
 		B1A9E000288EBC4C00907636 /* RoxieMobileTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoxieMobileTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A9E003288EBC4C00907636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A9E005288EBC4C00907636 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				B128869528918D0100FD218B /* NetworkRequestProtocol.swift */,
 				B128869728918FCA00FD218B /* NetworkResourceProtocol.swift */,
 				B128869B28919FFA00FD218B /* OrderResource.swift */,
+				B16E10732894325A0017F37F /* ImageRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				B1A9E01C288EC07800907636 /* OrdersViewController.swift in Sources */,
 				B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */,
 				B103D28E2893C4FC00A9CC1D /* NumberFormatter+Extension.swift in Sources */,
+				B16E10742894325A0017F37F /* ImageRequest.swift in Sources */,
 				B128869828918FCA00FD218B /* NetworkResourceProtocol.swift in Sources */,
 				B128869A2891925200FD218B /* APIRequest.swift in Sources */,
 				B103D28C2893C43200A9CC1D /* DateFormatter+Extension.swift in Sources */,

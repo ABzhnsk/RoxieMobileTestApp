@@ -12,6 +12,7 @@ class OrdersViewController: UIViewController {
     
     private var orders = [OrderInfo]()
     private var request: APIRequest<OrdersResource>?
+    private var orderImageRequest: AnyObject?
     private let reuseIdentifier = "reuseIdentifier"
     
     override func viewDidLoad() {
@@ -39,6 +40,16 @@ extension OrdersViewController {
     
     func openDetails(for order: OrderInfo) {
         let detailsController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
+        let imageURL = URL(string: "https://www.roxiemobile.ru/careers/test/images/\(order.vehicle.photo)")
+        guard let orderImageURL = imageURL else { return }
+        let imageRequest = ImageRequest(url: orderImageURL)
+        
+        self.orderImageRequest = imageRequest
+        imageRequest.execute { (orderImage: UIImage?) in
+            guard let orderImage = orderImage else { return }
+            detailsController?.imageView.image = orderImage
+        }
+        
         detailsController?.orderIdText = String(order.id)
         detailsController?.startAddressText = "\(order.startAddress.address), г. \(order.startAddress.city)"
         detailsController?.endAddressText = "\(order.endAddress.address), г. \(order.endAddress.city)"
@@ -48,6 +59,7 @@ extension OrdersViewController {
         detailsController?.driverNameText = order.vehicle.driverName
         detailsController?.regNumberText = order.vehicle.regNumber
         detailsController?.modelNameText = order.vehicle.modelName
+        
         self.navigationController?.pushViewController(detailsController!, animated: true)
     }
 }
