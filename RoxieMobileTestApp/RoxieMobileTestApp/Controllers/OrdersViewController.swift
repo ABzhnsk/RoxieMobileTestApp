@@ -35,6 +35,20 @@ extension OrdersViewController {
             self?.tableView.reloadData()
         }
     }
+    
+    func openDetails(for order: OrderInfo) {
+        let detailsController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
+        detailsController?.orderIdText = String(order.id)
+        detailsController?.startAddressText = "\(order.startAddress.address), г. \(order.startAddress.city)"
+        detailsController?.endAddressText = "\(order.endAddress.address), г. \(order.endAddress.city)"
+        detailsController?.dateOrderText = Settings.shared.formatter(for: order.orderTime)
+        detailsController?.timeOrderText = Settings.shared.timeFormatter(for: order.orderTime)
+        detailsController?.amountOrderText = Settings.shared.formatter(for: order.price.amount)
+        detailsController?.driverNameText = order.vehicle.driverName
+        detailsController?.regNumberText = order.vehicle.regNumber
+        detailsController?.modelNameText = order.vehicle.modelName
+        self.navigationController?.pushViewController(detailsController!, animated: true)
+    }
 }
 
 extension OrdersViewController: UITableViewDataSource {
@@ -49,6 +63,10 @@ extension OrdersViewController: UITableViewDataSource {
         cell.configure(withData: orders[indexPath.row])
         (indexPath.row  % 2 == 0) ? (cell.backgroundColor = UIColor.white) : (cell.backgroundColor = UIColor.superLightGray)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        openDetails(for: orders[indexPath.row])
     }
 }
 

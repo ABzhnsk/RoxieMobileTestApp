@@ -14,30 +14,11 @@ class OrdersTableViewCell: UITableViewCell {
     @IBOutlet weak var dateOrder: UILabel!
     @IBOutlet weak var amountOrder: UILabel!
     
-    static let dateFormatter: DateFormatter = {
-        let df = DateFormatter()
-        df.dateFormat = "dd.MM.yy"
-        return df
-    }()
-    
-    static let currencyFormatter: NumberFormatter = {
-        let currency = NumberFormatter()
-        currency.usesGroupingSeparator = true
-        currency.numberStyle = .currency
-        currency.locale = Locale(identifier: "ru_RU")
-        return currency
-    }()
-    
     func configure(withData order: OrderInfo) {
-        let isoDateFormatter = ISO8601DateFormatter()
-        guard let date = isoDateFormatter.date(from: order.orderTime) else {return}
-        let stringDate = OrdersTableViewCell.dateFormatter.string(from: date)
-        let amount: Float = Float(order.price.amount) / 100
-        let amountString = OrdersTableViewCell.currencyFormatter.string(from: amount as NSNumber)
         self.startAddress.text = "Откуда: \(order.startAddress.address), г. \(order.startAddress.city)"
         self.endAddress.text = "Куда: \(order.endAddress.address), г. \(order.endAddress.city)"
-        self.dateOrder.text = "Дата: \(stringDate)"
-        self.amountOrder.text = "Стоимость: \(amountString ?? "")"
+        self.dateOrder.text = "Дата: \(Settings.shared.formatter(for: order.orderTime))"
+        self.amountOrder.text = "Стоимость: \(Settings.shared.formatter(for: order.price.amount))"
     }
     
     override func prepareForReuse() {

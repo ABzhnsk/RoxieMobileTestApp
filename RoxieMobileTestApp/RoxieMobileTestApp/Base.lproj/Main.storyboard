@@ -44,7 +44,7 @@
         <!--Details View Controller-->
         <scene sceneID="BKI-MJ-sVi">
             <objects>
-                <viewController id="60K-pr-FOp" customClass="DetailsViewController" customModule="RoxieMobileTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="60K-pr-FOp" customClass="DetailsViewController" customModule="RoxieMobileTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pdr-NZ-bTK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,49 +57,49 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Откуда:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkh-fG-1zR">
-                                <rect key="frame" x="20" y="367" width="394" height="20.5"/>
+                                <rect key="frame" x="20" y="367" width="384" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSD-Ac-sGN">
-                                <rect key="frame" x="20" y="396" width="394" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSD-Ac-sGN">
+                                <rect key="frame" x="20" y="396" width="384" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата поездки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnk-dl-rp1">
-                                <rect key="frame" x="20" y="425" width="394" height="21"/>
+                                <rect key="frame" x="20" y="424.5" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время поездки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-qt-RdL">
-                                <rect key="frame" x="20" y="454" width="394" height="21"/>
+                                <rect key="frame" x="20" y="453.5" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость поездки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-YA-GUN">
-                                <rect key="frame" x="20" y="483" width="394" height="21"/>
+                                <rect key="frame" x="20" y="482.5" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер машины:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3J-64-v0h">
-                                <rect key="frame" x="20" y="541" width="394" height="21"/>
+                                <rect key="frame" x="20" y="540" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель машины:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHl-Ub-dMJ">
-                                <rect key="frame" x="20" y="570" width="394" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель машины:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHl-Ub-dMJ">
+                                <rect key="frame" x="20" y="569" width="384" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Водитель:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSb-B8-efs">
-                                <rect key="frame" x="20" y="512" width="394" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Водитель:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSb-B8-efs">
+                                <rect key="frame" x="20" y="511.5" width="384" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                             <constraint firstItem="SHl-Ub-dMJ" firstAttribute="top" secondItem="V3J-64-v0h" secondAttribute="bottom" constant="8" symbolic="YES" id="1U9-bu-6HX"/>
                             <constraint firstItem="LjZ-YA-GUN" firstAttribute="leading" secondItem="dfh-qt-RdL" secondAttribute="leading" id="1ql-Eq-UUY"/>
                             <constraint firstItem="gPy-id-ZdI" firstAttribute="trailing" secondItem="FCS-K2-8n1" secondAttribute="trailing" constant="20" id="45G-0g-Ccb"/>
-                            <constraint firstItem="gPy-id-ZdI" firstAttribute="trailing" secondItem="Rkh-fG-1zR" secondAttribute="trailing" id="51J-DG-bC3"/>
+                            <constraint firstItem="gPy-id-ZdI" firstAttribute="trailing" secondItem="Rkh-fG-1zR" secondAttribute="trailing" constant="10" id="51J-DG-bC3"/>
                             <constraint firstItem="Lnk-dl-rp1" firstAttribute="top" secondItem="HSD-Ac-sGN" secondAttribute="bottom" constant="8" symbolic="YES" id="6Ya-Yw-8ll"/>
                             <constraint firstItem="Rkh-fG-1zR" firstAttribute="leading" secondItem="gPy-id-ZdI" secondAttribute="leading" constant="20" id="6iD-vd-Ioz"/>
                             <constraint firstItem="Rkh-fG-1zR" firstAttribute="top" secondItem="FCS-K2-8n1" secondAttribute="bottom" constant="33" id="7du-hX-Ekv"/>
@@ -147,6 +147,18 @@
                             <constraint firstItem="SHl-Ub-dMJ" firstAttribute="trailing" secondItem="V3J-64-v0h" secondAttribute="trailing" id="zgA-0V-PbZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountOrder" destination="LjZ-YA-GUN" id="aE8-iu-6B4"/>
+                        <outlet property="dateOrder" destination="Lnk-dl-rp1" id="ocq-am-eSY"/>
+                        <outlet property="driverName" destination="ZSb-B8-efs" id="qXP-lD-xFh"/>
+                        <outlet property="endAddress" destination="HSD-Ac-sGN" id="Sl8-Qw-Wq3"/>
+                        <outlet property="imageView" destination="FCS-K2-8n1" id="cR7-L8-JPG"/>
+                        <outlet property="modelName" destination="SHl-Ub-dMJ" id="9fP-xI-870"/>
+                        <outlet property="orderId" destination="nyX-l2-mrw" id="ctX-pV-QWx"/>
+                        <outlet property="regNumber" destination="V3J-64-v0h" id="tvS-0e-e8L"/>
+                        <outlet property="startAddress" destination="Rkh-fG-1zR" id="C0Q-RS-SLm"/>
+                        <outlet property="timeOrder" destination="dfh-qt-RdL" id="KQY-Ih-SWd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kor-I4-VL2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

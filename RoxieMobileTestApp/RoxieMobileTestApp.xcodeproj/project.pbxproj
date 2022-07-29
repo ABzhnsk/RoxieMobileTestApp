@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B103D2842892E19A00A9CC1D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103D2832892E19900A9CC1D /* UIColor+Extension.swift */; };
 		B103D2862892E74400A9CC1D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103D2852892E74400A9CC1D /* DetailsViewController.swift */; };
+		B103D28A2892FEB700A9CC1D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103D2892892FEB700A9CC1D /* Settings.swift */; };
+		B103D28C2893C43200A9CC1D /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103D28B2893C43200A9CC1D /* DateFormatter+Extension.swift */; };
+		B103D28E2893C4FC00A9CC1D /* NumberFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103D28D2893C4FC00A9CC1D /* NumberFormatter+Extension.swift */; };
 		B128869628918D0100FD218B /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869528918D0100FD218B /* NetworkRequestProtocol.swift */; };
 		B128869828918FCA00FD218B /* NetworkResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128869728918FCA00FD218B /* NetworkResourceProtocol.swift */; };
 		B128869A2891925200FD218B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12886992891925200FD218B /* APIRequest.swift */; };
@@ -31,6 +34,9 @@
 		746C6C3E60865E0D866A0CB4 /* Pods-RoxieMobileTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoxieMobileTestApp.release.xcconfig"; path = "Target Support Files/Pods-RoxieMobileTestApp/Pods-RoxieMobileTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		B103D2832892E19900A9CC1D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B103D2852892E74400A9CC1D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B103D2892892FEB700A9CC1D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B103D28B2893C43200A9CC1D /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		B103D28D2893C4FC00A9CC1D /* NumberFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extension.swift"; sourceTree = "<group>"; };
 		B128869528918D0100FD218B /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		B128869728918FCA00FD218B /* NetworkResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResourceProtocol.swift; sourceTree = "<group>"; };
 		B12886992891925200FD218B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
@@ -77,6 +83,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B103D2872892E81800A9CC1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B103D2832892E19900A9CC1D /* UIColor+Extension.swift */,
+				B103D28B2893C43200A9CC1D /* DateFormatter+Extension.swift */,
+				B103D28D2893C4FC00A9CC1D /* NumberFormatter+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B103D2882892FE8200A9CC1D /* Singletone */ = {
+			isa = PBXGroup;
+			children = (
+				B103D2892892FEB700A9CC1D /* Settings.swift */,
+			);
+			path = Singletone;
+			sourceTree = "<group>";
+		};
 		B128869D2891A2D800FD218B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +133,16 @@
 			children = (
 				B1A9E003288EBC4C00907636 /* AppDelegate.swift */,
 				B1A9E005288EBC4C00907636 /* SceneDelegate.swift */,
+				B1A9E01A288EC02100907636 /* Controllers */,
+				B103D2872892E81800A9CC1D /* Extensions */,
 				B1A9E01D288EC0DC00907636 /* Model */,
 				B1A9E01E288EC0EB00907636 /* Services */,
-				B1A9E01A288EC02100907636 /* Controllers */,
 				B1A9E009288EBC4C00907636 /* Main.storyboard */,
+				B103D2882892FE8200A9CC1D /* Singletone */,
 				B128869D2891A2D800FD218B /* Cell */,
 				B1A9E00F288EBC4E00907636 /* Assets.xcassets */,
 				B1A9E014288EBC4E00907636 /* Info.plist */,
 				B1A9E00C288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld */,
-				B103D2832892E19900A9CC1D /* UIColor+Extension.swift */,
 			);
 			path = RoxieMobileTestApp;
 			sourceTree = "<group>";
@@ -267,13 +292,16 @@
 			files = (
 				B128869C28919FFA00FD218B /* OrderResource.swift in Sources */,
 				B1A9E004288EBC4C00907636 /* AppDelegate.swift in Sources */,
+				B103D28A2892FEB700A9CC1D /* Settings.swift in Sources */,
 				B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */,
 				B103D2842892E19A00A9CC1D /* UIColor+Extension.swift in Sources */,
 				B128869628918D0100FD218B /* NetworkRequestProtocol.swift in Sources */,
 				B1A9E01C288EC07800907636 /* OrdersViewController.swift in Sources */,
 				B1A9E006288EBC4C00907636 /* SceneDelegate.swift in Sources */,
+				B103D28E2893C4FC00A9CC1D /* NumberFormatter+Extension.swift in Sources */,
 				B128869828918FCA00FD218B /* NetworkResourceProtocol.swift in Sources */,
 				B128869A2891925200FD218B /* APIRequest.swift in Sources */,
+				B103D28C2893C43200A9CC1D /* DateFormatter+Extension.swift in Sources */,
 				B12886A02891A31B00FD218B /* OrdersTableViewCell.swift in Sources */,
 				B1A9E00E288EBC4C00907636 /* RoxieMobileTestApp.xcdatamodeld in Sources */,
 				B103D2862892E74400A9CC1D /* DetailsViewController.swift in Sources */,
