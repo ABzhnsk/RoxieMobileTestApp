@@ -14,6 +14,8 @@ class OrdersViewController: UIViewController {
     private var request: APIRequest<OrdersResource>?
     private var orderImageRequest: AnyObject?
     private let reuseIdentifier = "reuseIdentifier"
+    //    private let fileManager = FileManager.default
+    private let localManager = LocalFileManager.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +42,24 @@ extension OrdersViewController {
     
     func openDetails(for order: OrderInfo) {
         let detailsController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
+        let fileManager = FileManager.default
+        
         let imageURL = URL(string: "https://www.roxiemobile.ru/careers/test/images/\(order.vehicle.photo)")
         guard let orderImageURL = imageURL else { return }
         let imageRequest = ImageRequest(url: orderImageURL)
-        
         self.orderImageRequest = imageRequest
-        imageRequest.execute { (orderImage: UIImage?) in
-            guard let orderImage = orderImage else { return }
-            detailsController?.imageView.image = orderImage
+        guard let imagePath = localManager.filePath(for: order.vehicle.photo)?.path else { return }
+        if !(fileManager.fileExists(atPath: imagePath)) {
+            imageRequest.execute { (orderImage: UIImage?) in
+                guard let orderImage = orderImage else { return }
+                DispatchQueue.main.async {
+                    LocalFileManager.instance.saveImage(image: orderImage, key: order.vehicle.photo)
+                    detailsController?.imageView.image = orderImage
+                }
+            }
         }
         
+        detailsController?.orderImage = LocalFileManager.instance.getImage(for: order.vehicle.photo) ?? UIImage()
         detailsController?.orderIdText = String(order.id)
         detailsController?.startAddressText = "\(order.startAddress.address), г. \(order.startAddress.city)"
         detailsController?.endAddressText = "\(order.endAddress.address), г. \(order.endAddress.city)"

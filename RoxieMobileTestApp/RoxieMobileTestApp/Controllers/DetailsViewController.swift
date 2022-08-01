@@ -20,6 +20,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var regNumber: UILabel!
     @IBOutlet weak var modelName: UILabel!
     
+    var orderImage = UIImage()
     var orderIdText = String()
     var startAddressText = String()
     var endAddressText = String()
@@ -36,7 +37,7 @@ class DetailsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.imageView.image = nil
+        self.imageView.image = orderImage
         self.orderId.text = "Заказ №\(orderIdText)"
         self.startAddress.text = "Откуда: \(startAddressText)"
         self.endAddress.text = "Куда: \(endAddressText)"
