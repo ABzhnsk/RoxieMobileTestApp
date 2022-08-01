@@ -24,6 +24,7 @@ class OrdersViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
+        customNavBar()
         fetchOrders()
     }
 }
@@ -71,6 +72,12 @@ extension OrdersViewController {
         detailsController?.modelNameText = order.vehicle.modelName
         
         self.navigationController?.pushViewController(detailsController!, animated: true)
+    }
+    
+    private func customNavBar() {
+        self.navigationController?.navigationBar.barTintColor = UIColor.orange
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
 }
 
