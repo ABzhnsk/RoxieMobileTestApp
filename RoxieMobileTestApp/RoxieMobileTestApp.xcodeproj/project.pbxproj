@@ -27,6 +27,7 @@
 		B1A9E01C288EC07800907636 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E01B288EC07800907636 /* OrdersViewController.swift */; };
 		B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9E021288EEBA700907636 /* OrderInfo.swift */; };
 		B1BD07EB289860FA00C69331 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BD07EA289860FA00C69331 /* LocalFileManager.swift */; };
+		B1BD07ED28986A2600C69331 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BD07EC28986A2600C69331 /* StartViewController.swift */; };
 		EB2344B2C27C129E882C9362 /* Pods_RoxieMobileTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD76F62F0875D3A65476F57 /* Pods_RoxieMobileTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		B1A9E01B288EC07800907636 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		B1A9E021288EEBA700907636 /* OrderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfo.swift; sourceTree = "<group>"; };
 		B1BD07EA289860FA00C69331 /* LocalFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		B1BD07EC28986A2600C69331 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				B1A9E01B288EC07800907636 /* OrdersViewController.swift */,
 				B103D2852892E74400A9CC1D /* DetailsViewController.swift */,
+				B1BD07EC28986A2600C69331 /* StartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				B103D28A2892FEB700A9CC1D /* Settings.swift in Sources */,
 				B1A9E022288EEBA700907636 /* OrderInfo.swift in Sources */,
 				B1BD07EB289860FA00C69331 /* LocalFileManager.swift in Sources */,
+				B1BD07ED28986A2600C69331 /* StartViewController.swift in Sources */,
 				B103D2842892E19A00A9CC1D /* UIColor+Extension.swift in Sources */,
 				B128869628918D0100FD218B /* NetworkRequestProtocol.swift in Sources */,
 				B1A9E01C288EC07800907636 /* OrdersViewController.swift in Sources */,
