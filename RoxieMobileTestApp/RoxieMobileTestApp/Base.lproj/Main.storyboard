@@ -154,7 +154,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86666667460000002" green="0.92549026010000002" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="xI5-Jp-gNw" firstAttribute="trailing" secondItem="Zdd-IK-eVm" secondAttribute="trailing" id="56t-nM-oEh"/>
                                 </constraints>
@@ -163,7 +163,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gPy-id-ZdI"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.79607844350000001" green="0.32941177490000001" blue="0.15294116739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="0pB-fC-8dn" firstAttribute="leading" secondItem="gPy-id-ZdI" secondAttribute="leading" id="43E-VM-WyV"/>
                             <constraint firstItem="xI5-Jp-gNw" firstAttribute="width" secondItem="m0j-gz-wFI" secondAttribute="width" id="GJc-ce-Egf"/>
